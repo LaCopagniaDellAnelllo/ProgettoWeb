@@ -3,12 +3,11 @@
 body {
 	background-image:url("img/agronomo-vigneto-napoli.jpg") ;
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+		
 }
 
 div.top{
-	background-color: #FFFFFF;
-	opacity: 0.5;
 	height: 84px;
 	position: absolute;
 	left: 1.8mm;
@@ -19,7 +18,6 @@ div.top{
 
 div.log{
 	float: right;
-	opacity: 100;
 	padding:2px 3px 0px 0px;
 }
 	
