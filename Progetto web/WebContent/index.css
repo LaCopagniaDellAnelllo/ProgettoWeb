@@ -22,8 +22,17 @@ div.log{
 	float: right;
 	padding:2px 3px 0px 0px;
 }
+
+div.log img{
+	width: 140px;
+	height: 28px;
+}
+
 button.log{
 	width: 150px;
 	height: 30px;
+	background-size: cover;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 	
