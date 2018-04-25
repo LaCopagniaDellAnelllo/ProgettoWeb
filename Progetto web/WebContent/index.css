@@ -7,3 +7,14 @@ body {
 h1.top{
 	
 }
+	background-image:url("img/vino-cantina.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+h1.titolo{
+	font-size:90px; 
+}
+h1#sottotitolo{
+	color: #01ebb1;
+}
+	
