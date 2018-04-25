@@ -9,7 +9,7 @@ body {
 
 div.top{
 	height: 84px;
-	position: absolute;
+	position: fixed;
 	left: 1.8mm;
 	top: 0px;
 	width: 99%;
