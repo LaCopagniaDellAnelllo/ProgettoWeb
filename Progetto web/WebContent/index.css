@@ -4,6 +4,8 @@ body {
 	background-image:url("img/agronomo-vigneto-napoli.jpg") ;
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: cursive;
+	
 		
 }
 
@@ -19,5 +21,9 @@ div.top{
 div.log{
 	float: right;
 	padding:2px 3px 0px 0px;
+}
+button.log{
+	width: 150px;
+	height: 30px;
 }
 	
