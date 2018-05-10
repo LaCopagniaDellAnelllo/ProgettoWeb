@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE>
 <html>
 <head>
-
-<meta charset="UTF-8">
-<title>La Cantinetta</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>La cantinetta</title>
 <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
-
 	<div class="top" style="background-color: #FFFFFF; opacity: 0.5;"></div>
 
 	<div class="top">
@@ -33,8 +32,9 @@
 	</div>
 
 
+
 	<div>
-		<ul class="navigazione">
+		<ul class="navigazione" style="list-style-type: none;">
 			<li><a>home</a></li>
 			<li><a>storia</a></li>
 			<li><a>galleria</a></li>
@@ -44,6 +44,8 @@
 
 		</ul>
 	</div>
+
+
 
 
 

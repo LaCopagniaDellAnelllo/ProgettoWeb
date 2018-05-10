@@ -17,7 +17,6 @@ div.top{
 	width: 99%;
 }
 
-
 div.log{
 	float: right;
 	padding:2px 3px 0px 0px;
@@ -36,3 +35,24 @@ button.log{
 	border-bottom-right-radius: 20px;
 }
 	
+ul.navigazione  {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+li.navigazione {
+	float: left;
+}
+
+li.navigazione  a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li.navigazione  a:hover {
+	background-color: #111111;
+}
