@@ -6,8 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>La cantinetta</title>
 <link rel="stylesheet" href="../style/header.css">
+<link rel="stylesheet" href="../style/home.css">
+<script src="../JavaScript/jquery.js"></script>
+<script src="../JavaScript/SliderHome.js"></script>
+
 </head>
+
 <body>
+
+
 	<div class="topunder"></div>
 
 	<div class="top">
@@ -23,7 +30,8 @@
 		</div>
 
 		<div align="center" style="opacity: 0.6; margin-top: 5px">
-			<img src="../img/La Cantinetta SCRITTA.png" width="820px" height="70px">
+			<img src="../img/La Cantinetta SCRITTA.png" width="820px"
+				height="70px">
 		</div>
 
 	</div>
@@ -38,6 +46,21 @@
 			<li class="navigazione"><a>CONTATTI</a></li>
 
 		</ul>
+	</div>
+
+	<div id="slider">
+
+		<a href="#" class="control_next">&gt</a> 
+		<a href="#" class="control_prev">&lt</a>
+		<ul>
+			<li>SLIDE 1</li>
+			<li style="background: #aaa;">SLIDE 2</li>
+			<li>SLIDE 3</li>
+			<li style="background: #aaa;">SLIDE 4</li>
+		</ul>
+
+		
+
 	</div>
 
 
