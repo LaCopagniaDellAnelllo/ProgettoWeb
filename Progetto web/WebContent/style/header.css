@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 body {
-	background-image: url("../img/agronomo-vigneto-napoli.jpg");
+	background-image: url("../img/BEPIN_DE_ETO_3.cantina_sfondo.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: cursive;
@@ -13,8 +13,9 @@ div.topunder {
 	left: 1.8mm;
 	top: 0px;
 	width: 99%;
-	background-color: #FFFFFF;
+	background: #ffffff;
 	opacity: 0.5;
+	
 }
 
 div.top {
@@ -45,26 +46,34 @@ div.navigazione {
 
 ul.navigazione {
 	list-style-type: none;
-	overflow: hidden;
-	background-color: #ffffff;
-	opacity: 0.5;	
+	text-align: center;
+ 	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+
 	
 }
 
 li.navigazione {
-	float: left;	
+
+	text-align: center;
+	display: inline-block;
+  
 }
 
 li.navigazione  a {
+	
 	display: block;
-	color: black;
 	text-align: center;
-	padding: 13px;
+	padding: 18px;
+	text-transform:uppercase;
 	text-decoration: none;
-	font-size: x-large;
+	font-size: 18px;
+	color:#606060;
 }
 
 li.navigazione  a:hover {
-	background-color: #0e4e4e;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.1);
+	color:#606060;
 		
 }
