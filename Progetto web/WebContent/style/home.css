@@ -7,8 +7,8 @@
   overflow: hidden;
   margin: 20px auto 0 0;
   border-radius: 4px;
-  width: 700px;
-  height: 500px;
+  width: 801px;
+  height: 441px;
   left: 0px;
 }
 
@@ -16,7 +16,8 @@
   position: relative;
   margin: 0;
   padding: 0;
-  height: 200px;
+  width: 801px;
+  height: 441px;
   list-style: none;
 }
 
@@ -24,13 +25,7 @@
   position: relative;
   display: block;
   float: left;
-  margin: 0;
-  padding: 0;
-  width: 700px;
-  height: 500px;
-  background: #ccc;
-  text-align: center;
-  line-height: 500px;
+ 
 }
 
 a.control_prev, a.control_next {
