@@ -14,7 +14,6 @@
 
 <body>
 
-
 	<div class="topunder"></div>
 
 	<div class="top">
@@ -25,8 +24,8 @@
 		</div>
 
 
-		<div class="log" align="right">
-			<img src="../img/log in.png" style="margin-right: -4px;"> <br>
+		<div class="log" align="right" >
+			<img src="../img/log in.png" style="margin-bottom: 5px;"> <br>
 			<img src="../img/sign in.png">
 		</div>
 
@@ -97,9 +96,6 @@
 				src="../img/immagini dello slder/poderibosco_15foto_di_a.manna.jpg"
 				width=" 801px"></li>
 			<li><img
-				src="../img/immagini dello slder/poderibosco_16foto_di_a.manna.jpg"
-				width=" 801px"></li>
-			<li><img
 				src="../img/immagini dello slder/poderibosco_17foto_di_a.manna.jpg"
 				width=" 801px"></li>
 			<li><img
@@ -117,8 +113,12 @@
 
 
 	</div>
-
-
+	
+	<footer>
+		<div align="left"  style="margin-left: 60px;">
+			<img src="../img/logo cantina.png" width="160px" height="150px" style="padding-top: 30px;">
+		</div>
+	</footer>
 
 
 </body>
