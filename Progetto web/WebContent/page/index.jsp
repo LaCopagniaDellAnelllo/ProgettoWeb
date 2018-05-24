@@ -15,7 +15,8 @@
 
 <body>
 	<div>
-
+	
+		<!--  header -->
 		<div>
 			<div class="topunder"></div>
 
@@ -28,8 +29,10 @@
 
 
 				<div class="log" align="right">
-					<img src="../img/log in.png" style="margin-bottom: 5px;"> <br>
-					<img src="../img/sign in.png">
+					<ul>
+						<li><img src="../img/log in.png" style="margin-bottom: 5px;"></li>
+						<li><img src="../img/sign in.png"></li>
+					</ul>
 				</div>
 
 				<div align="center" style="opacity: 0.6; margin-top: 5px">
@@ -40,6 +43,7 @@
 			</div>
 
 		</div>
+
 
 		<div class="navigazione">
 			<ul class="navigazione">
@@ -53,7 +57,8 @@
 			</ul>
 		</div>
 
-		<div>
+
+		<div class="corpo">
 			<div class="text">
 				<p id="title">L'Azienda</p>
 				<p id="text">La selezione di uve nobili, la ricerca del giusto
@@ -66,64 +71,45 @@
 
 			<div id="slider">
 
-				<a href="#" class="control_next">&gt</a> <a href="#"
-					class="control_prev">&lt</a>
+				<a href="#" class="control_next">&gt;</a> <a href="#"
+					class="control_prev">&lt;</a>
 				<ul>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_01foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_01foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_02foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_02foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_03foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_03foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_05foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_05foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_06foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_06foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_07foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_07foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_08foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_08foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_09foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_09foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_10foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_10foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_11foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_11foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_12foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_12foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_13foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_13foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_14foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_14foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_15foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_15foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_17foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_17foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_19foto_di_a.manna.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_19foto_di_a.manna.jpg"></li>
 					<li><img
-						src="../img/immagini dello slder/poderibosco_20foto_di_a.manna.jpg"
-						width=" 801px"></li>
-					<li><img src="../img/immagini dello slder/s4200039.jpg"
-						width=" 801px"></li>
-					<li><img src="../img/immagini dello slder/vignasfondo_18.jpg"
-						width=" 801px"></li>
+						src="../img/immagini dello slder/poderibosco_20foto_di_a.manna.jpg"></li>
+					<li><img src="../img/immagini dello slder/s4200039.jpg"></li>
+					<li><img src="../img/immagini dello slder/vignasfondo_18.jpg"></li>
 				</ul>
 
 
@@ -131,12 +117,15 @@
 			</div>
 		</div>
 
+
 		<footer>
+			<!--  logo footer -->
 			<div align="left" style="margin-left: 60px; float: left;">
 				<img src="../img/logo cantina.png" width="160px" height="150px"
 					style="padding-top: 60px;">
 			</div>
 
+			<!--  social -->
 			<div class="social" align="right">
 				<p>Seguici sui nostri social</p>
 					
@@ -147,6 +136,8 @@
 					src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
 				</a>
 			</div>
+			
+			<!--  contatti -->
 			<div class="contact">
 				<p>Azienda agricola La Cantinetta</p>
 				<p>Via Roma 21</p>
