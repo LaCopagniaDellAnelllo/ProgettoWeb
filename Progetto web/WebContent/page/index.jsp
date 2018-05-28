@@ -15,7 +15,7 @@
 
 <body>
 	<div>
-	
+
 		<!--  header -->
 		<div>
 			<div class="topunder"></div>
@@ -37,7 +37,7 @@
 
 				<div align="center" style="opacity: 0.6; margin-top: 5px">
 					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
-						width="820px" height="70px"></a>
+						style="height: 1.90em; width: 25em;"></a>
 				</div>
 
 			</div>
@@ -70,7 +70,7 @@
 			</div>
 
 			<div id="slider">
-
+				<!--on click return false su href -->
 				<a href="#" class="control_next">&gt;</a> <a href="#"
 					class="control_prev">&lt;</a>
 				<ul>
@@ -128,15 +128,15 @@
 			<!--  social -->
 			<div class="social" align="right">
 				<p>Seguici sui nostri social</p>
-					
-				<a href="heVolevi.jsp">
-				<img src="../img/9-2-twitter-high-quality-png.png" width="50px"
+
+				<a href="heVolevi.jsp"> <img
+					src="../img/9-2-twitter-high-quality-png.png" width="50px"
 					height="50px"> <img src="../img/instagram-colourful-icon.png"
 					width="50px" height="50px"> <img
 					src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
 				</a>
 			</div>
-			
+
 			<!--  contatti -->
 			<div class="contact">
 				<p>Azienda agricola La Cantinetta</p>

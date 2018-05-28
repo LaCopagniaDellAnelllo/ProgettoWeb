@@ -89,6 +89,7 @@ li.navigazione  a:hover {
 }
 
 footer {
+	clear: both;
 	height: 250px;
 	background-color: #646464;
 	margin: auto -8px -20px -8px;
