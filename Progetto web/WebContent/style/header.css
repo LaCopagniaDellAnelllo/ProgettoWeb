@@ -10,6 +10,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+body>div{
+	width: 60em;
+	margin: 0 auto;
+	
+}
+
 div.topunder {
 	height: 3.1em;
 	position: absolute;
@@ -50,8 +56,8 @@ div.log ul li img {
 
 div.navigazione {
 	position: relative;
-	margin-left: -7px;
-	margin-right: -7px;
+	margin-left: -0.3em;
+	margin-right: -0.3em;
 	font-family: cursive;
 }
 
@@ -74,10 +80,10 @@ li.navigazione {
 li.navigazione  a {
 	display: block;
 	text-align: center;
-	padding: 18px;
+	padding: 1em;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 0.6em;
 	color: #186a04;
 }
 
@@ -90,9 +96,9 @@ li.navigazione  a:hover {
 
 footer {
 	clear: both;
-	height: 250px;
+	height: 10em;
 	background-color: #646464;
-	margin: auto -8px -20px -8px;
+	margin: auto -0.3em -1em -0.3em;
 }
 
 div.contact {
