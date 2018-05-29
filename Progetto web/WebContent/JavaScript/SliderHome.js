@@ -38,10 +38,12 @@ jQuery(document).ready(function ($) {
 
 	$('a.control_prev').click(function () {
 		moveLeft();
+		return false;
 	});
 
 	$('a.control_next').click(function () {
 		moveRight();
+		return false;
 	});
 
 });    
