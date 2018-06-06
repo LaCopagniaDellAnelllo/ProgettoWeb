@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>La cantinetta</title>
 <link rel="stylesheet" href="../style/header.css">
-<link rel="stylesheet" href="../style/home.css">
+<link rel="stylesheet" href="../style/galleria.css">
 <script src="../JavaScript/jquery.js"></script>
-<script src="../JavaScript/SliderHome.js"></script>
+<script src="../JavaScript/gallery.js"></script>
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 </head>
@@ -35,7 +35,7 @@
 
 				<div align="center" style="opacity: 0.6; margin-top: 10px">
 					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
-						style="width: 25em;height: 1.90em; "></a>
+						style="width: 25em; height: 1.90em;"></a>
 				</div>
 
 			</div>
@@ -55,28 +55,70 @@
 		</ul>
 	</div>
 
-	<footer>
-	<div align="left" style="margin-left: 60px; float: left;">
-		<img src="../img/logo cantina.png" width="160px" height="150px"
-			style="padding-top: 60px;">
+
+
+	<div class="gallery">
+		<img
+			src="../img/immagini dello slder/poderibosco_01foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_02foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_03foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_05foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_06foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_07foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_08foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_09foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_10foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_11foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_12foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_13foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_14foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_15foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_17foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_19foto_di_a.manna.jpg">
+		<img
+			src="../img/immagini dello slder/poderibosco_20foto_di_a.manna.jpg">
+		<img src="../img/immagini dello slder/s4200039.jpg"> <img
+			src="../img/immagini dello slder/vignasfondo_18.jpg">
 	</div>
 
-	<div class="social" align="right">
-		<p>Seguici sui nostri social</p>
-		
-		<a href="heVolevi.jsp">
-		<img src="../img/9-2-twitter-high-quality-png.png" width="50px"
-			height="50px"> <img src="../img/instagram-colourful-icon.png"
-			width="50px" height="50px"> <img
-			src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
-		</a>
-	</div>
-	<div class="contact">
-		<p>Azienda agricola La Cantinetta</p>
-		<p>Via Roma 21</p>
-		<p>Fisciano</p>
-		<p>84084 Fisciano(Sa)</p>
-	</div>
+
+	<footer>
+		<div align="left" style="margin-left: 60px; float: left;">
+			<img src="../img/logo cantina.png" width="160px" height="150px"
+				style="padding-top: 60px;">
+		</div>
+
+		<div class="social" align="right">
+			<p>Seguici sui nostri social</p>
+
+			<a href="heVolevi.jsp"> <img
+				src="../img/9-2-twitter-high-quality-png.png" width="50px"
+				height="50px"> <img src="../img/instagram-colourful-icon.png"
+				width="50px" height="50px"> <img
+				src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
+			</a>
+		</div>
+		<div class="contact">
+			<p>Azienda agricola La Cantinetta</p>
+			<p>Via Roma 21</p>
+			<p>Fisciano</p>
+			<p>84084 Fisciano(Sa)</p>
+		</div>
 
 
 

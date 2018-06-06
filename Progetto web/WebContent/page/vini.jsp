@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -56,27 +56,33 @@
 		</ul>
 	</div>
 
-	<footer>
-	<div align="left" style="margin-left: 60px; float: left;">
-		<img src="../img/logo cantina.png" width="160px" height="150px"
-			style="padding-top: 60px;">
-	</div>
 
-	<div class="social" align="right">
-		<p>Seguici sui nostri social</p>
-		<a href="heVolevi.jsp">
-		<img src="../img/9-2-twitter-high-quality-png.png" width="50px"
-			height="50px"> <img src="../img/instagram-colourful-icon.png"
-			width="50px" height="50px"> <img
-			src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
-		</a>
-	</div>
-	<div class="contact">
-		<p>Azienda agricola La Cantinetta</p>
-		<p>Via Roma 21</p>
-		<p>Fisciano</p>
-		<p>84084 Fisciano(Sa)</p>
-	</div>
+
+
+
+
+
+	<footer>
+		<div align="left" style="margin-left: 60px; float: left;">
+			<img src="../img/logo cantina.png" width="160px" height="150px"
+				style="padding-top: 60px;">
+		</div>
+
+		<div class="social" align="right">
+			<p>Seguici sui nostri social</p>
+			<a href="heVolevi.jsp"> <img
+				src="../img/9-2-twitter-high-quality-png.png" width="50px"
+				height="50px"> <img src="../img/instagram-colourful-icon.png"
+				width="50px" height="50px"> <img
+				src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
+			</a>
+		</div>
+		<div class="contact">
+			<p>Azienda agricola La Cantinetta</p>
+			<p>Via Roma 21</p>
+			<p>Fisciano</p>
+			<p>84084 Fisciano(Sa)</p>
+		</div>
 
 
 
