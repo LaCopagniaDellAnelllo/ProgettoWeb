@@ -13,27 +13,35 @@
 </head>
 <body>
 	<div>
-		<div class="topunder"></div>
 
-		<div class="top">
+		<!--  header -->
+		<div>
+			<div class="topunder"></div>
 
-			<div style="float: left; align-items: center;">
-				<img src="../img/logo cantina.png" width="88px" height="80px"
-					style="margin-top: -5px">
-			</div>
+			<div class="top">
+
+				<div class="logo">
+					<img src="../img/logo cantina.png" width="88px" height="80px"
+						style="margin-top: -5px">
+				</div>
 
 
-			<div class="log" align="right">
-				<img src="../img/log in.png" style="margin-bottom: 5px;"> <br>
-				<img src="../img/sign in.png">
-			</div>
+				<div class="log">
+					<ul>
+						<li><img src="../img/log in.png" style="margin-bottom: 5px;"></li>
+						<li><img src="../img/sign in.png"></li>
+					</ul>
+				</div>
 
-			<div align="center" style="opacity: 0.6; margin-top: 5px">
-				<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
-					width="820px" height="70px"></a>
+				<div align="center" style="opacity: 0.6; margin-top: 10px">
+					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
+						style="width: 25em;height: 1.90em; "></a>
+				</div>
+
 			</div>
 
 		</div>
+
 
 	</div>
 	<div class="navigazione">

@@ -22,22 +22,22 @@
 
 			<div class="top">
 
-				<div style="float: left; align-items: center;">
+				<div class="logo">
 					<img src="../img/logo cantina.png" width="88px" height="80px"
 						style="margin-top: -5px">
 				</div>
 
 
-				<div class="log" align="right">
+				<div class="log">
 					<ul>
 						<li><img src="../img/log in.png" style="margin-bottom: 5px;"></li>
 						<li><img src="../img/sign in.png"></li>
 					</ul>
 				</div>
 
-				<div align="center" style="opacity: 0.6; margin-top: 5px">
+				<div align="center" style="opacity: 0.6; margin-top: 10px">
 					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
-						style="height: 1.90em; width: 25em;"></a>
+						style="width: 25em;height: 1.90em; "></a>
 				</div>
 
 			</div>
@@ -58,7 +58,7 @@
 		</div>
 
 
-		<div class="corpo">
+		<div class="corpo" align="center">
 		
 			<div class="text">
 				<p id="title">L'Azienda</p>
@@ -71,7 +71,7 @@
 			</div>
 
 			<div id="slider">
-				<!--on click return false su href -->
+			
 				<a href="#" class="control_next">&gt;</a> <a href="#"
 					class="control_prev">&lt;</a>
 				<ul>
@@ -116,6 +116,8 @@
 
 
 			</div>
+		
+		
 		</div>
 
 
