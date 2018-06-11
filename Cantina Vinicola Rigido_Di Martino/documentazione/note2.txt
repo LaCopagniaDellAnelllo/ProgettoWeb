@@ -1,0 +1,24 @@
+﻿Abbiamo assunto che ci sia solo una cantina.
+Abbiamo assunto che il vino puo' essere prodotto da una sola qualità d'uva.
+Abbiamo assunto che in un magazzino ha bisogno solo di un dipendente.
+
+Come abbiamo creato l'er, e bottiglie di un'unica annata  devono essere messe nello stesso magazzino. Questo non ci piace, quindi torniamo  e riguardiamo l'er e ci accorgiamo che la cardinalità di vino è 1n con magazzino  perchè il codice è univoco per annata
+
+
+Attributi derivabili:
+-Fattura totale
+-Capacità magazzino
+-Numero di bottiglie nel magazzino dai litri prodotti dai silos
+
+vincolo di integrità
+
+un dipendenti che lavora nella cantina non può lavorare in un magazzino e viceversa
+
+il numero il bottiglie depositate all'interno di un magazzino  non puo' superare la sua capacità del magazzino  stesso
+
+Il vino sfuso viene prodotto in litri, e nella fase di imbottigliamento si producono bottiglie da 0,75. Si è deciso di arrotondare per difetto il numero di bottiglie prodotte in quella annata.
+
+
+
+
+Un dipendente puo' lavorare in un soo magazzino.

@@ -1,0 +1,8 @@
+CodiceFiscale,Via,Città,CAP,Numero_Civico,Nome,Cognome,Telefono,Cantina_idCantina,Magazzino_idMagazzino
+PTRPTR65M02B963Y,Roma,Caserta,81100,34,Pieto,Petriccione,823343715,NULL,2
+ARYIAS24N02C913Y,Manzi,Napoli,50101,3,Giovanni,Gialli,234567822,NULL,NULL
+AYYFY71N03G456D,Stella,Caserta,50102,5,Maria,Rossi,345678890,1,NULL
+TSJP87K8NHD980D,Piena,Napoli,50103,6,Fabio,Bianchi,456789098,NULL,3
+ABCDF12ND9A765D,Cristoforo,Caserta,50104,7,Luca,Verdi,567891232,NULL,1
+AOJEB12BPOJ3HBO,Novella,Tramonti,84010,13,Alfredo,Coppola,545414414,1,NULL
+DFWEFWE23QSA2W,Trugnano,Tramonti,84010,25,Federico,Ripoli,269843568,1,NULL
