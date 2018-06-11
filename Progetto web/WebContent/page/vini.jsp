@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" import="control.EsecutoreQuery, java.sql.ResultSet"
+contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <html>
 <head>
@@ -57,7 +58,13 @@
 	</div>
 
 
-
+<%
+String query = "SELECT VinoSfuso_Nome, Vino_img, Descrizione" +
+		"FROM Vino";
+EsecutoreQuery eq = new EsecutoreQuery();
+eq.setQuery(query);
+ResultSet rs=eq.exeQuery();
+%>
 
 
 

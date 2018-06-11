@@ -1,4 +1,4 @@
-package Control;
+package control;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,10 +18,10 @@ public class ConnectorDB {
 			
 			String ip = "127.0.0.1";
 			String port = "3306";
-			String db = "palestra";
+			String db = "cantina";
 	
 			String url ="jdbc:mysql://"+ ip+":"+ port+"/"+db;
-			con = DriverManager.getConnection(url, "root", "FEDElol96");
+			con = DriverManager.getConnection(url, "admin", "admin");
 			con.setAutoCommit(false);
 			
 		} catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
