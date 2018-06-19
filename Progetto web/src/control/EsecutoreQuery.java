@@ -4,29 +4,22 @@ import java.sql.*;
 
 public class EsecutoreQuery {
 
-	private String query;
-	private ConnectorDB con;
+	private ConnectorDB condb;
 	
 	public EsecutoreQuery() {
-		con = new ConnectorDB();
+		condb = new ConnectorDB();
 	}
 	
-	public void setQuery(String query1) {
-		query = query1;
-	}
+
 	
-	public ResultSet exeQuery() {
+	public ResultSet exeQuery(String query) throws SQLException, InstantiationException, IllegalAccessException {
 		ResultSet rs = null;
-		try {
-			Statement st = con.createConnection().createStatement();
-			if (query != null) {
-				rs= st.executeQuery(query);
-			} else {
-				return rs;
-			}
-		} catch (SQLException e) {
+		Connection con = condb.createConnection();
+		Statement st = con.createStatement();
+		if (query != null) {
+			rs= st.executeQuery(query);
 		}
-		
+		condb.closeConnection();
 		return rs;
 	}
 	

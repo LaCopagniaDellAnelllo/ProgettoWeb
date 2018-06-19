@@ -1,4 +1,4 @@
-<%@ page language="java" import="control.EsecutoreQuery, java.sql.ResultSet"
+<%@ page language="java" import="control.EsecutoreQuery, java.sql.*"
 contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <html>
@@ -60,10 +60,9 @@ contentType="text/html; charset=UTF-8"
 
 <%
 String query = "SELECT VinoSfuso_Nome, immagine, Descrizione" +
-		"FROM Vino";
+		"FROM vino";
 EsecutoreQuery eq = new EsecutoreQuery();
-eq.setQuery(query);
-ResultSet rs=eq.exeQuery();
+ResultSet rs=eq.exeQuery(query);
 %>
 
 

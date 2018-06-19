@@ -36,8 +36,7 @@
 				</div>
 
 				<div align="center" style="opacity: 0.6; margin-top: 10px">
-					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
-						style="width: 25em;height: 1.90em; "></a>
+					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png" class="nomeazienda"></a>
 				</div>
 
 			</div>
@@ -60,15 +59,6 @@
 
 		<div class="corpo" align="center">
 		
-			<div class="text">
-				<p id="title">L'Azienda</p>
-				<p id="text">La selezione di uve nobili, la ricerca del giusto
-					grado di freschezza ed umidità unito allo scorrere del tempo,
-					vecchi segreti tramandati da vinificatori del luogo e tecniche di
-					elaborazione all’avanguardia danno vita a vini di elevatissima
-					qualità, stimati in tutto il mondo.</p>
-
-			</div>
 
 			<div id="slider">
 			
@@ -113,9 +103,18 @@
 					<li><img src="../img/immagini dello slder/vignasfondo_18.jpg"></li>
 				</ul>
 
+			</div>
 
+			<div class="text">
+				<p id="title">L'Azienda</p>
+				<p id="text">La selezione di uve nobili, la ricerca del giusto
+					grado di freschezza ed umidità unito allo scorrere del tempo,
+					vecchi segreti tramandati da vinificatori del luogo e tecniche di
+					elaborazione all’avanguardia danno vita a vini di elevatissima
+					qualità, stimati in tutto il mondo.</p>
 
 			</div>
+
 		
 		
 		</div>

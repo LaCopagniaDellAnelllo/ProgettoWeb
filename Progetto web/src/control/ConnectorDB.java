@@ -1,8 +1,7 @@
 package control;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+
 
 public class ConnectorDB {
 	
@@ -11,10 +10,10 @@ public class ConnectorDB {
 	public ConnectorDB() {
 	}
 	
-	public Connection createConnection() throws SQLException {
+	public Connection createConnection() throws SQLException, InstantiationException, IllegalAccessException {
 		
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			
 			String ip = "127.0.0.1";
 			String port = "3306";
@@ -24,8 +23,9 @@ public class ConnectorDB {
 			con.setAutoCommit(false);
 			
 		} catch (ClassNotFoundException e) {
-			System.out.println("DB driver not found!");
+			System.out.println(e);
 		}
+
 		return con;	
 	}
 	
