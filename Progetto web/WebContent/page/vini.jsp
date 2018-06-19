@@ -59,7 +59,7 @@ contentType="text/html; charset=UTF-8"
 
 
 <%
-String query = "SELECT VinoSfuso_Nome, Vino_img, Descrizione" +
+String query = "SELECT VinoSfuso_Nome, immagine, Descrizione" +
 		"FROM Vino";
 EsecutoreQuery eq = new EsecutoreQuery();
 eq.setQuery(query);

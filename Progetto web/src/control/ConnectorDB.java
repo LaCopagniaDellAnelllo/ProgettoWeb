@@ -11,26 +11,25 @@ public class ConnectorDB {
 	public ConnectorDB() {
 	}
 	
-	public static Connection createConnection() throws SQLException {
+	public Connection createConnection() throws SQLException {
 		
 		try{
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.jdbc.Driver");
 			
 			String ip = "127.0.0.1";
 			String port = "3306";
 			String db = "cantina";
-	
 			String url ="jdbc:mysql://"+ ip+":"+ port+"/"+db;
-			con = DriverManager.getConnection(url, "admin", "admin");
+			con = DriverManager.getConnection(url, "root", "alex");
 			con.setAutoCommit(false);
 			
-		} catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+		} catch (ClassNotFoundException e) {
 			System.out.println("DB driver not found!");
 		}
 		return con;	
 	}
 	
-	public static void closeConnection() throws SQLException{
+	public void closeConnection() throws SQLException{
 		if (con != null) {
 			con.close();
 		}
