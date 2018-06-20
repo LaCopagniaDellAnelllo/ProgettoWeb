@@ -19,8 +19,14 @@ public class EsecutoreQuery {
 		if (query != null) {
 			rs= st.executeQuery(query);
 		}
-		condb.closeConnection();
 		return rs;
 	}
 	
+	public void closeConnection() {
+		try {
+			condb.closeConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }

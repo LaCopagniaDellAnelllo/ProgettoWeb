@@ -15,6 +15,7 @@ public class tester {
 			String query2="select nome, cognome from dipendenti ";
 			Statement st = con.createStatement();
 			ResultSet statmant = st.executeQuery(query2);
+			connector.closeConnection();
 		    while (statmant.next()){
 		    	System.out.print(statmant.getString("nome")+ " " + statmant.getString("cognome") + "\n");
 		           		
@@ -22,10 +23,10 @@ public class tester {
 		    
 		 } 
 		catch (SQLException e) {
-
+			e.printStackTrace();
     }
 		
-		connector.closeConnection();
+
 		
 		
 
