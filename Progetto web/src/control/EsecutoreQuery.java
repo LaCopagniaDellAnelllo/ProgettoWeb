@@ -21,7 +21,10 @@ public class EsecutoreQuery {
 		if (query != null) {
 			rs= st.executeQuery(query);
 		}
+<<<<<<< HEAD
 		
+=======
+>>>>>>> d38f9e975607243439ad14a4ab692312d6448e33
 		return rs;
 	}
 	
@@ -32,5 +35,8 @@ public class EsecutoreQuery {
 			e.printStackTrace();
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> d38f9e975607243439ad14a4ab692312d6448e33
 }
