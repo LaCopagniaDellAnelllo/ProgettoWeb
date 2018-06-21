@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>La cantinetta</title>
+<link rel="icon" href="../img/logo cantina.png" type="image/png" />
 <link rel="stylesheet" href="../style/header.css">
 <link rel="stylesheet" href="../style/home.css">
 <script src="../JavaScript/jquery.js"></script>
@@ -13,7 +14,7 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body>
-	<div>
+	
 	
 
 		<!--  header -->
@@ -30,8 +31,8 @@
 
 				<div class="log">
 					<ul>
-						<li><img src="../img/log in.png" style="margin-bottom: 5px;"></li>
-						<li><img src="../img/sign in.png"></li>
+						<li><a href=""><img src="../img/log in.png" style="margin-bottom: 5px;"></a></li>
+						<li><a href=""><img src="../img/sign in.png"></a></li>
 					</ul>
 				</div>
 
@@ -62,8 +63,8 @@
 
 			<div id="slider">
 			
-				<a href="#" class="control_next">&gt;</a> <a href="#"
-					class="control_prev">&lt;</a>
+				<a href="#" class="control_next">&gt;</a> 
+				<a href="#"	class="control_prev">&lt;</a>
 				<ul>
 					<li><img
 						src="../img/immagini dello slder/poderibosco_01foto_di_a.manna.jpg"></li>
@@ -122,7 +123,7 @@
 
 		<footer>
 			<!--  logo footer -->
-			<div align="left" style="margin-left: 60px; float: left;">
+			<div align="left" class="logof">
 				<img src="../img/logo cantina.png" width="160px" height="150px"
 					style="padding-top: 60px;">
 			</div>
@@ -131,12 +132,11 @@
 			<div class="social" align="right">
 				<p>Seguici sui nostri social</p>
 
-				<a href="heVolevi.jsp"> <img
-					src="../img/9-2-twitter-high-quality-png.png" width="50px"
-					height="50px"> <img src="../img/instagram-colourful-icon.png"
-					width="50px" height="50px"> <img
-					src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
-				</a>
+				<ul>
+				<li class="social"><a href="heVolevi.jsp"> <img src="../img/9-2-twitter-high-quality-png.png" width="50px" height="50px"></a></li>
+				<li class="social"><a href="heVolevi.jsp"> <img src="../img/instagram-colourful-icon.png" width="50px" height="50px"></a> </li>
+				<li class="social"><a href="heVolevi.jsp"> <img src="../img/md_5a9794da1b10e.png" width="50px" height="50px"></a></li>
+			</ul>
 			</div>
 
 			<!--  contatti -->
@@ -150,8 +150,6 @@
 
 
 		</footer>
-
-	</div>
 
 </body>
 </html>

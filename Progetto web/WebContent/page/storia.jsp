@@ -4,6 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>La cantinetta</title>
+<link rel="icon" href="../img/logo cantina.png" type="image/png" />
 <link rel="stylesheet" href="../style/header.css">
 <link rel="stylesheet" href="../style/storia.css">
 <script src="../JavaScript/jquery.js"></script>
@@ -69,20 +70,29 @@
 	</div>
 
 	<footer>
-		<div align="left" style="margin-left: 60px; float: left;">
+		<!--  logo footer -->
+		<div align="left" class="logof">
 			<img src="../img/logo cantina.png" width="160px" height="150px"
 				style="padding-top: 60px;">
 		</div>
 
+		<!--  social -->
 		<div class="social" align="right">
 			<p>Seguici sui nostri social</p>
-			<a href="heVolevi.jsp"> <img
-				src="../img/9-2-twitter-high-quality-png.png" width="50px"
-				height="50px"> <img src="../img/instagram-colourful-icon.png"
-				width="50px" height="50px"> <img
-				src="../img/md_5a9794da1b10e.png" width="50px" height="50px">
-			</a>
+
+			<ul>
+				<li class="social"><a href="heVolevi.jsp"> <img
+						src="../img/9-2-twitter-high-quality-png.png" width="50px"
+						height="50px"></a></li>
+				<li class="social"><a href="heVolevi.jsp"> <img
+						src="../img/instagram-colourful-icon.png" width="50px"
+						height="50px"></a></li>
+				<li class="social"><a href="heVolevi.jsp"> <img
+						src="../img/md_5a9794da1b10e.png" width="50px" height="50px"></a></li>
+			</ul>
 		</div>
+
+		<!--  contatti -->
 		<div class="contact">
 			<p>Azienda agricola La Cantinetta</p>
 			<p>Via Roma 21</p>

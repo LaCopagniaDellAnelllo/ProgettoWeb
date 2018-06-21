@@ -16,13 +16,13 @@ public class tester {
 			Statement st = con.createStatement();
 			ResultSet statmant = st.executeQuery(query2);
 		    while (statmant.next()){
-		    	System.out.print(statmant.getString("nome")+ " " + statmant.getString("cognome") + "\n");
+		    	System.out.print(statmant.getString(1)+ " " + statmant.getString("cognome") + "\n");
 		           		
 		    }
 		    
 		 } 
 		catch (SQLException e) {
-
+			e.printStackTrace();
     }
 		
 		connector.closeConnection();
