@@ -1,4 +1,4 @@
-<%@ page language="java" import="control.EsecutoreQuery, java.sql.*"
+<%@ page language="java" import="control.EsecutoreQuery, java.sql.*, java.util.*"
 	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
@@ -58,7 +58,21 @@
 	</div>
 
 
+<%
+String query = "";
+EsecutoreQuery eq = new EsecutoreQuery();
+ArrayList<String[]> result = eq.exeQuery(query);
+%>
 
+	<div>
+		<table>
+		<tr>
+		
+		</tr>
+		
+		</table>
+	</div>
+	
 
 
 	<footer>

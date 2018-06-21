@@ -1,31 +1,48 @@
 package control;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class EsecutoreQuery {
 
 	private ConnectorDB condb;
-	
-	
+	ArrayList<String[]> result = null;
+	String[] tupla;
 	
 	public EsecutoreQuery() {
 		condb = new ConnectorDB();
 	}
 	
-
 	
-	public ResultSet exeQuery(String query) throws SQLException, InstantiationException, IllegalAccessException {
-		ResultSet rs = null;
-		Connection con = condb.createConnection();
-		Statement st = con.createStatement();
-		if (query != null) {
-			rs= st.executeQuery(query);
+	public ArrayList<String[]> exeQuery(String query) throws SQLException, InstantiationException, IllegalAccessException {
+		try {
+			ResultSet rs = null;
+			Connection con = condb.createConnection();
+			System.out.println(con);
+			if (con!=null){
+				Statement st = con.createStatement();
+
+				if (query != null) {
+					rs= st.executeQuery(query);
+				}
+
+				result = new ArrayList<String[]>();
+
+				//copio ogni tupla di rs in un array di stringhe
+				while(rs.next()){
+					int i = 1;
+					while(rs.getString(i) != null) {
+						tupla[i] = rs.getString(i);
+						i++;
+					}
+					// salvo l'array in un ArrayList
+					result.add(tupla);
+				}
+			} else {System.out.println("Connessione assente con Database");}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-<<<<<<< HEAD
-		
-=======
->>>>>>> d38f9e975607243439ad14a4ab692312d6448e33
-		return rs;
+		return result;
 	}
 	
 	public void closeConnection() {
@@ -35,8 +52,5 @@ public class EsecutoreQuery {
 			e.printStackTrace();
 		}
 	}
-<<<<<<< HEAD
-	
-=======
->>>>>>> d38f9e975607243439ad14a4ab692312d6448e33
+
 }
