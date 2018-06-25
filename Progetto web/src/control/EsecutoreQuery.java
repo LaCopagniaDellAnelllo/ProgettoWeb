@@ -8,7 +8,7 @@ public class EsecutoreQuery {
 	private ConnectorDB condb;
 	ArrayList<String[]> result = null;
 	String[] tupla;
-	Connection con = condb.createConnection();
+	Connection con = null;
 	
 	public EsecutoreQuery() throws InstantiationException, IllegalAccessException, SQLException {
 		condb = new ConnectorDB();
@@ -18,7 +18,7 @@ public class EsecutoreQuery {
 	public ArrayList<String[]> exeQuery(String query) throws SQLException, InstantiationException, IllegalAccessException {
 		try {
 			ResultSet rs = null;
-			
+			con = condb.createConnection();
 			System.out.println(con);
 			if (con!=null){
 				Statement st = con.createStatement();
