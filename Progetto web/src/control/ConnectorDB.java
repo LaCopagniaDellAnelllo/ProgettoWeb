@@ -13,12 +13,13 @@ public class ConnectorDB {
 	public Connection createConnection() throws SQLException, InstantiationException, IllegalAccessException {
 		
 		try{
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.jdbc.Driver");
 			
 			String ip = "127.0.0.1";
 			String port = "3306";
 			String db = "cantina";
 			String url ="jdbc:mysql://"+ ip+":"+ port+"/"+db;
+			System.out.println(url);
 			con = DriverManager.getConnection(url, "root", "alex");
 			con.setAutoCommit(false);
 			

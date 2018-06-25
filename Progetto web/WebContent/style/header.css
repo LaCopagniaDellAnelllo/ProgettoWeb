@@ -64,7 +64,14 @@ div.log ul li img {
 	height: 0.6em;
 }
 
+div.nomeazienda{
+	opacity: 0.6; 
+	margin-top: 10px;
+	width: 80%;
+	
+}
 img.nomeazienda {
+	
 	width: 25em;
 	height: 1.90em;
 }

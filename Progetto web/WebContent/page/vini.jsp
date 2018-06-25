@@ -59,7 +59,7 @@
 
 
 <%
-String query = "";
+String query = "select nome, cognome from dipendenti";
 EsecutoreQuery eq = new EsecutoreQuery();
 ArrayList<String[]> result = eq.exeQuery(query);
 %>
