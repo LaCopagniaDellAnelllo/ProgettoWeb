@@ -17,7 +17,9 @@ public class tester {
 			ResultSet statmant = st.executeQuery(query2);
 			
 		    while (statmant.next()){
-		    	System.out.print(statmant.getString(1)+ " " + statmant.getString("cognome") + "\n");
+		    	String nome = statmant.getString(1);
+		    	String cognome = statmant.getString("cognome");
+		    	System.out.print(nome + " " + cognome + "\n");
 		           		
 		    }
 		    connector.closeConnection();

@@ -19,7 +19,6 @@ public class EsecutoreQuery {
 		try {
 			ResultSet rs = null;
 			con = condb.createConnection();
-			System.out.println(con);
 			if (con!=null){
 				Statement st = con.createStatement();
 
@@ -40,10 +39,12 @@ public class EsecutoreQuery {
 					result.add(tupla);
 				}
 			} else {System.out.println("Connessione assente con Database");}
+			return result;
 		} catch (Exception e) {
 			e.printStackTrace();
+			return null;
 		}
-		return result;
+		
 	}
 	
 	public void closeConnection() {

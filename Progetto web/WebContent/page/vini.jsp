@@ -59,22 +59,36 @@
 
 
 <%
-String query = "select nome, cognome from dipendenti";
+String query = "select immagine, Descrizione, VinoSfuso_Nome, VinoSfuso_Anno from vino";
 EsecutoreQuery eq = new EsecutoreQuery();
 ArrayList<String[]> result = eq.exeQuery(query);
+if (result != null) {
 %>
 
 	<div>
 		<table>
-		<tr>
-		
-		</tr>
-		
+		<%for(int i = 0; i < result.size(); i++) {
+			String[] vino = result.get(i);
+			%>
+			<tr>
+			<%=vino[1]%>
+			</tr>
+		<%	
+		}
+		%>
 		</table>
 	</div>
-	
-
-
+<%	
+} else {
+%>
+	<div>
+		<p align="center">
+			Abbiamo riscontrato un problema nel database
+		</p>
+	</div>
+<%	
+}
+%>
 	<footer>
 		<!--  logo footer -->
 		<div align="left" class="logof">
