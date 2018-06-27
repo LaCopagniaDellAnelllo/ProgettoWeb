@@ -37,7 +37,7 @@
 				<div align="center" style="opacity: 0.6; margin-top: 10px">
 					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
 						class="nomeazienda"></a>
-				</div>
+				</div>ciao
 
 			</div>
 
