@@ -39,10 +39,27 @@
 				</ul>
 			</div>
 
+			<div class="accesso">
+				<form>
+					<div class="riga">
+						<p>Username:</p>
+						<input type="text" name="Username">
+					</div>
+					<div class="riga">
+						<p>Password:</p>
+						<input type="password" name="Password">
+					</div>
+					
+						<input type="button" value="Signin">
+						<input type="submit" value="Login">
+				</form>
+			</div>
+
+
 
 			<div class="nomeazienda" align="center">
 				<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
-				class="nomeazienda"	></a>
+					class="nomeazienda"></a>
 			</div>
 
 
