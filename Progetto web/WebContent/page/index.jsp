@@ -110,8 +110,6 @@
 				<li><img
 					src="../img/immagini dello slder/poderibosco_11foto_di_a.manna.jpg"></li>
 				<li><img
-					src="../img/immagini dello slder/poderibosco_12foto_di_a.manna.jpg"></li>
-				<li><img
 					src="../img/immagini dello slder/poderibosco_13foto_di_a.manna.jpg"></li>
 				<li><img
 					src="../img/immagini dello slder/poderibosco_14foto_di_a.manna.jpg"></li>
