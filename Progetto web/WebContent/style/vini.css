@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+table img{
+	float: left;
+	margin-left: 5%;
+}
+
+table p{
+	margin-top: 5px;
+}

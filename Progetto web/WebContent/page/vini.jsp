@@ -71,7 +71,11 @@ if (result != null) {
 			String[] vino = result.get(i);
 			%>
 			<tr>
+			<td>
 			<%=vino[1]%>
+			<h2><%=vino[3] %>></h2>
+			<%=vino[2] %>
+			</td>
 			</tr>
 		<%	
 		}
