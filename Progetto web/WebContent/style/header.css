@@ -2,6 +2,7 @@
 
 * {
 	font-size: 1.12em;
+	outline: none;
 	
 }
 
@@ -83,6 +84,7 @@ div.accesso input[type=text], input[type=password]{
 	width: 7em;
 	font-size: small;
 	display: table-cell;
+	padding-left: 4px;
 }
 
 div.accesso p{
