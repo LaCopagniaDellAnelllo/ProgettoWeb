@@ -8,11 +8,13 @@ div.gallery{
 		rgba(255, 255, 255, 0.6);
 	margin: 2% 2% ;
 	padding: 0.5em 0.5em 0.5em 0.5em;
+	text-align: center;
 }
 
 
 div.gallery img {
 	margin: 0.2em 0.2em 0.2em 0.2em;
-	width: 452px;
-	height: 306px;
+	width:400px;
+	height:254px;
+	box-sizing: border-box;
 }
