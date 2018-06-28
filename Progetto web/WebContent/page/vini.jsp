@@ -6,7 +6,7 @@
 <title>La cantinetta</title>
 <link rel="icon" href="../img/logo cantina.png" type="image/png" />
 <link rel="stylesheet" href="../style/header.css">
-<link rel="stylesheet" href="../style/home.css">
+<link rel="stylesheet" href="../style/vini.css">
 <script src="../JavaScript/jquery.js"></script>
 <script src="../JavaScript/SliderHome.js"></script>
 <meta http-equiv="Pragma" content="no-cache">
@@ -59,27 +59,32 @@
 
 
 <%
-String query = "select immagine, Descrizione, VinoSfuso_Nome, VinoSfuso_Anno from vino";
+String query = "select immagine, Descrizione, VinoSfuso_Nome from vino";
 EsecutoreQuery eq = new EsecutoreQuery();
-ArrayList<String[]> result = eq.exeQuery(query);
+ArrayList<String[]> result = eq.exeQuery(query, 3);
 if (result != null) {
 %>
 
 	<div>
-		<table>
-		<%for(int i = 0; i < result.size(); i++) {
-			String[] vino = result.get(i);
+		<table class="bacheca">
+			<%
+				for (int i = 0; i < result.size(); i++) {
+						String[] vino = result.get(i);
 			%>
 			<tr>
-			<td>
-			<%=vino[1]%>
-			<h2><%=vino[3] %>></h2>
-			<%=vino[2] %>
-			</td>
+				<td class="bottiglia">
+					<img src="<%=vino[0]%>">
+				</td>
+				
+				<td class="descrizione">
+					<h2><%=vino[2]%></h2>
+					<p><%=vino[1]%></p>
+				</td>
+				
 			</tr>
-		<%	
-		}
-		%>
+			<%
+				}
+			%>
 		</table>
 	</div>
 <%	

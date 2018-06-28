@@ -1,8 +1,18 @@
 @charset "UTF-8";
 
+div.gallery{
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%,
+		rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%,
+		rgba(255, 255, 255, 0.2) 100%);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.5), inset 0 0 1px
+		rgba(255, 255, 255, 0.6);
+	margin: 2% 2% ;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+
 div.gallery img {
-	float: left;
-	padding: 0 2px 2px 0;
-	max-width: 40%;
-	max-height: 40%;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	width: 452px;
+	height: 306px;
 }

@@ -15,7 +15,7 @@ public class EsecutoreQuery {
 	}
 	
 	
-	public ArrayList<String[]> exeQuery(String query) throws SQLException, InstantiationException, IllegalAccessException {
+	public ArrayList<String[]> exeQuery(String query, int numColonne) throws SQLException, InstantiationException, IllegalAccessException {
 		try {
 			ResultSet rs = null;
 			con = condb.createConnection();
@@ -27,12 +27,12 @@ public class EsecutoreQuery {
 				}
 
 				result = new ArrayList<String[]>();
-
 				//copio ogni tupla di rs in un array di stringhe
 				while(rs.next()){
-					int i = 1;
-					while(rs.getString(i) != null) {
-						tupla[i] = rs.getString(i);
+					tupla = new String[10];
+					int i = 0;
+					while(i < numColonne ) {
+						tupla[i] = rs.getString(i+1);
 						i++;
 					}
 					// salvo l'array in un ArrayList

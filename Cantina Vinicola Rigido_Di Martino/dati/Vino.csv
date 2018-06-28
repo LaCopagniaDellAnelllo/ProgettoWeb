@@ -1,5 +1,5 @@
-idVino,Centilitri,Prezzo,VinoSfuso_Nome,VinoSfuso_Anno
-L1,75,15.00,Lancella,2015
-C1,75,12.00,Cimmarino,2016
-A1,75,14.00,Alabranno,2015
-T1,75,19.00,Terzarulo,2016
+idVino,Centilitri,Prezzo,VinoSfuso_Nome,VinoSfuso_Anno,immagine,Descrizione
+L1,75,15.00,Lancella,2015,../img/lancella2013.png,"Si presenta all'olfatto fresco, con note agrumate. Per quanto riguarda il gusto è sapido, di eccellente mineralità e buona persistenza; può essere abbinato ad una cucina di mare mediamente condita, a mozzarella di bufala, a crostacei e molluschi, ed infine si adegua bene anche alla pizza. Di particolare interesse è il nome d'origine del vino che proviene dal nome della brocca smaltata con cui tradizionalmente si attingeva il vino bianco per servirlo fresco."
+C1,75,12.00,Cimmarino,2016,../img/cimmarino2013.png,"Si presenta all'ofatto con note di confettura, piccoli frutti scuri, sottobosco, tabacco. Al gusto da una sensazione di frutta croccante, speziata e morbida con una buona lunghezza e profondità. Può essere abbinato a primi piatti complessi, carni rosse, formaggi e salumi. Il nome “Cimmarino” è il nome gergale della parte alta della vigna, dalla quale si scorge il mare all’orizzonte."
+A1,75,14.00,Alabranno,2015,../img/alabranno2013.png,"Si presenta aromatico con sentori di agrumi, frutta gialla, fiori, e frutta secca. Al gusto è avvolgente, con grande verticalità e armonico. È abbinabile a cucina di mare, pesce crudo, crostacei e molluschi, e carni bianche. Interessante è il nome di provenienza “Alabranno”, dialettale per “albeggiando” per via del ritorno dalle vendemmie e dalle campagne di acquisto dell’uva di nonno Lisandro che avveniva alle prime luci del giorno."
+T1,75,19.00,Terzarulo,2016,../img/terzarulo2013.png,"Si presenta profumato con setori di frutta rossa, di fiori, e sottobosco. Al gusto è di grande freschezza, tannico, abbastanza strutturato e di buona lunghezza. Può essere abbinato a zuppe autunnali, legumi, carni rosse, formaggi di media stagionatura. Il nome proviene dal gergale della botte di castagno da 300 litri da cui, nella vineria, si spillava il vino rosso."

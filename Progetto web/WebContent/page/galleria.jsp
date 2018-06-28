@@ -37,7 +37,7 @@
 				<div align="center" style="opacity: 0.6; margin-top: 10px">
 					<a href="index.jsp"><img src="../img/La Cantinetta SCRITTA.png"
 						class="nomeazienda"></a>
-				</div>ciao
+				</div>
 
 			</div>
 
@@ -59,38 +59,42 @@
 
 
 	<div class="gallery">
+
 		<img
 			src="../img/immagini dello slder/poderibosco_01foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_02foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_03foto_di_a.manna.jpg">
+
 		<img
 			src="../img/immagini dello slder/poderibosco_05foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_06foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_07foto_di_a.manna.jpg">
+
 		<img
 			src="../img/immagini dello slder/poderibosco_08foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_09foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_10foto_di_a.manna.jpg">
+
 		<img
 			src="../img/immagini dello slder/poderibosco_11foto_di_a.manna.jpg">
-		<img
-			src="../img/immagini dello slder/poderibosco_12foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_13foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_14foto_di_a.manna.jpg">
+
 		<img
 			src="../img/immagini dello slder/poderibosco_15foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_17foto_di_a.manna.jpg">
 		<img
 			src="../img/immagini dello slder/poderibosco_19foto_di_a.manna.jpg">
+
 		<img
 			src="../img/immagini dello slder/poderibosco_20foto_di_a.manna.jpg">
 		<img src="../img/immagini dello slder/s4200039.jpg"> <img
