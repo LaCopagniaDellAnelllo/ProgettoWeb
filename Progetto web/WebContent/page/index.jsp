@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="accesso">
-				<form>
+				<form action="Accasso" method="post">
 					<div class="riga">
 						<p>Username:</p>
 						<input type="text" name="Username">
