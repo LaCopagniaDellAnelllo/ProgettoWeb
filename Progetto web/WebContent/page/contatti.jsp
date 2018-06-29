@@ -28,8 +28,8 @@
 			<h1>Contatti</h1>
 			<h1>&</h1>
 			<h1>Info</h1>
-			<p>La cantinetta potete trovarla in Via Roma 21 Fisciano SA e stata
-				creta da Federico Ripoli e Alessando Rigido per i contattrci
+			<p>La cantinetta potete trovarla in Via Roma 21 Fisciano SA è stata
+				creata da Federico Ripoli e Alessando Rigido per contattarci
 				inviateci una mail a alessandrorigido@gmail.com oppure a
 				federico.ripoli.96@gmail.com</p>
 		</div>
