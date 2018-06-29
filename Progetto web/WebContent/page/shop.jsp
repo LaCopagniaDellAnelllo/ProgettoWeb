@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../style/home.css">
 <script src="../JavaScript/jquery.js"></script>
 <script src="../JavaScript/SliderHome.js"></script>
+<script src="../JavaScript/login.js"></script>
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 </head>

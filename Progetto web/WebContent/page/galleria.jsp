@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../style/galleria.css">
 <script src="../JavaScript/jquery.js"></script>
 <script src="../JavaScript/gallery.js"></script>
+<script src="../JavaScript/login.js"></script>
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 </head>

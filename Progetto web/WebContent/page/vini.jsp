@@ -9,8 +9,10 @@
 <link rel="stylesheet" href="../style/vini.css">
 <script src="../JavaScript/jquery.js"></script>
 <script src="../JavaScript/SliderHome.js"></script>
+<script src="../JavaScript/login.js"></script>
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 		<%@ include file="header.jsp"%>

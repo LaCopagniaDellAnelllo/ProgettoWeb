@@ -314,13 +314,10 @@ div.logof {
 /*300%*/
 @media ( max-width : 500px) {
 	img.nomeazienda {
-	visibility: hidden;
-
-
-		
+		display: none;	
 	}
 	div.contact {
-		padding-left: 14em;
+		display: none;
 	}
 	div.social {
 		margin-right: 1em;
