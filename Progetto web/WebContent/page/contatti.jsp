@@ -26,7 +26,7 @@
 		</div>
 		<div class="Contatti">
 			<h1>Contatti</h1>
-			<h1>&</h1>
+			<h1>&amp;</h1>
 			<h1>Info</h1>
 			<p>La cantinetta potete trovarla in Via Roma 21 Fisciano SA è stata
 				creata da Federico Ripoli e Alessando Rigido per contattarci

@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="accesso">
-				<form action="Accasso" method="post">
+				<form action="Accesso" method="post">
 					<div class="riga">
 						<p>Username:</p>
 						<input type="text" name="Username">
