@@ -26,27 +26,51 @@ public class Accesso extends HttpServlet{
 		
 		String user = (String) request.getAttribute("Username");
 		String pass = (String) request.getAttribute("Password");
-		String utente = checkAccesso(user, pass);
+		String[] utente = checkAccesso(user, pass);
 		
-		if (utente != null) {
+		if (utente[0] != null) {
 			
+			//controlla se è un dipendente (o cliente)
+			if (utente[3] != null) {
+				session.setAttribute("nome", utente[3]);
+			} else {
+				session.setAttribute("nome", utente[2]);
+			}
+			
+			
+			//controlla se è admin
+			if (Boolean.parseBoolean(utente[1]) == true) {
+				session.setAttribute("isAdmin", Boolean.parseBoolean(utente[1]));
+			}
+			
+		} else {
+			session.setAttribute("Errore", "e-mail o password errata");
 		}
 	}
 
 	
-	private String checkAccesso(String user, String pass) {
+	@SuppressWarnings("finally")
+	private String[] checkAccesso(String user, String pass) {
 		ConnectorDB condb = new ConnectorDB();
 		
 		try {
 			Connection con = condb.createConnection();
-			String query = "SELECT Nome FROM cliente" +
-							"WHERE email = " + user + " and password = " + pass;
+			String query = "SELECT Account.idAccount, Account.admin, Cliente.nome, Dipendenti.nome " +
+							"FROM Account, Cliente, Dipendenti" +
+							"WHERE email = " + user + " and password = " + pass +
+							"and Account.cf_dipendenti = Dipendenti.CodiceFiscale and Account.id_cliente = Cliente.CodiceCliente";
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(query);
-			String nome = null;
-			if (rs != null) nome = rs.getString("Nome");
+			String[] result = new String[4];
+			if (rs.next()) {
+				result[0] = rs.getString(1);
+				result[1] = rs.getString(2);
+				result[2] = rs.getString(3);
+				result[3] = rs.getString(4);
+			}
+			
 			con.close();
-			return nome;
+			return result;
 			
 		} catch (InstantiationException | IllegalAccessException | SQLException e) {
 			e.printStackTrace();
