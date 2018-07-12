@@ -17,14 +17,13 @@ public class Accesso extends HttpServlet{
 		super();
 	}
 	
-	@Override
-	public void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+	
+	protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		doPost(request,response);
 	}
 	
 	
-	@Override
-	public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+	protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		response.setContentType("text/html");
 		HttpSession session = request.getSession();
 		
@@ -51,7 +50,7 @@ public class Accesso extends HttpServlet{
 			session.setAttribute("Errore", "e-mail o password errata");
 		}
 		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/page/index.jsp");
 		dispatcher.forward(request, response);
 	}
 
