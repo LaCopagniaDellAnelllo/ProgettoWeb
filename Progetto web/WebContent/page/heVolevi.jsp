@@ -4,11 +4,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>La cantinetta</title>
-<link rel="icon" href="../img/logo cantina.png" type="image/png" />
-<link rel="stylesheet" href="../style/header.css">
-<link rel="stylesheet" href="../style/home.css">
-<script src="../JavaScript/jquery.js"></script>
-<script src="../JavaScript/SliderHome.js"></script>
+<link rel="icon" href="/Progetto_web/img/logo cantina.png" type="image/png" />
+<link rel="stylesheet" href="/Progetto_web/style/header.css">
+<link rel="stylesheet" href="/Progetto_web/style/home.css">
+<script src="/Progetto_web/JavaScript/jquery.js"></script>
+<script src="/Progetto_web/JavaScript/SliderHome.js"></script>
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 </head>

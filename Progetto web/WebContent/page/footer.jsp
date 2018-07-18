@@ -4,7 +4,7 @@
     <footer>
 		<!--  logo footer -->
 		<div align="left" class="logof">
-			<img src="../img/logo cantina.png" width="160px" height="150px"
+			<img src="/Progetto_web/img/logo cantina.png" width="160px" height="150px"
 				style="padding-top: 60px;">
 		</div>
 
@@ -14,13 +14,13 @@
 
 			<ul>
 				<li class="social"><a href="heVolevi.jsp"> <img
-						src="../img/9-2-twitter-high-quality-png.png" width="50px"
+						src="/Progetto_web/img/9-2-twitter-high-quality-png.png" width="50px"
 						height="50px"></a></li>
 				<li class="social"><a href="heVolevi.jsp"> <img
-						src="../img/instagram-colourful-icon.png" width="50px"
+						src="/Progetto_web/img/instagram-colourful-icon.png" width="50px"
 						height="50px"></a></li>
 				<li class="social"><a href="heVolevi.jsp"> <img
-						src="../img/md_5a9794da1b10e.png" width="50px" height="50px"></a></li>
+						src="/Progetto_web/img/md_5a9794da1b10e.png" width="50px" height="50px"></a></li>
 			</ul>
 		</div>
 

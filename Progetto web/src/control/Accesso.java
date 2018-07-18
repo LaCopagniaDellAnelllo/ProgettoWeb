@@ -22,7 +22,7 @@ public class Accesso extends HttpServlet{
 		doPost(request,response);
 	}
 	
-	
+	/*se non viene effettuato il login creaa pagina bianca*/
 	protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		HttpSession session = request.getSession();
 		
@@ -45,12 +45,13 @@ public class Accesso extends HttpServlet{
 				session.setAttribute("isAdmin", Boolean.parseBoolean(utente[1]));
 			}
 			
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/page/login.jsp");
+			dispatcher.forward(request, response);
+			
 		} else {
 			session.setAttribute("Errore", "e-mail o password errata");
 		}
-		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("page/index.jsp");
-		dispatcher.forward(request, response);
+
 	}
 
 	
