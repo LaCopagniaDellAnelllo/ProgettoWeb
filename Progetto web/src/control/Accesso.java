@@ -24,14 +24,13 @@ public class Accesso extends HttpServlet{
 	
 	
 	protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		response.setContentType("text/html");
 		HttpSession session = request.getSession();
 		
-		String user = (String) request.getAttribute("Username");
-		String pass = (String) request.getAttribute("Password");
+		String user = (String) request.getParameter("Username");
+		String pass = (String) request.getParameter("Password");
 		String[] utente = checkAccesso(user, pass);
 		
-		if (utente[0] != null) {
+		if (utente != null) {
 			
 			//controlla se è un dipendente (o cliente)
 			if (utente[3] != null) {
@@ -50,7 +49,7 @@ public class Accesso extends HttpServlet{
 			session.setAttribute("Errore", "e-mail o password errata");
 		}
 		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/page/index.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("page/index.jsp");
 		dispatcher.forward(request, response);
 	}
 
