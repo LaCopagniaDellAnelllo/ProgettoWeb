@@ -7,7 +7,7 @@
 <title>La cantinetta</title>
 <link rel="icon" href="/Progetto_web/img/logo cantina.png" type="image/png" />
 <link rel="stylesheet" href="/Progetto_web/style/header.css">
-<link rel="stylesheet" href="/Progetto-web/style/home.css">
+<link rel="stylesheet" href="/Progetto_web/style/home.css">
 <script src="/Progetto_web/JavaScript/jquery.js"></script>
 <script src="/Progetto_web/JavaScript/SliderHome.js"></script>
 <script src="/Progetto_web/JavaScript/login.js"></script>

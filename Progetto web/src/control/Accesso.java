@@ -22,7 +22,7 @@ public class Accesso extends HttpServlet{
 		doPost(request,response);
 	}
 	
-	/*se non viene effettuato il login creaa pagina bianca*/
+	/*se non viene effettuato il login crea pagina bianca*/
 	protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		HttpSession session = request.getSession();
 		
@@ -32,7 +32,7 @@ public class Accesso extends HttpServlet{
 		
 		if (utente != null) {
 			
-			//controlla se è un dipendente (o cliente)
+			//controlla se è un dipendente[3] (o cliente[2])
 			if (utente[3] != null) {
 				session.setAttribute("nome", utente[3]);
 			} else {
@@ -42,14 +42,20 @@ public class Accesso extends HttpServlet{
 			
 			//controlla se è admin
 			if (Boolean.parseBoolean(utente[1]) == true) {
-				session.setAttribute("isAdmin", Boolean.parseBoolean(utente[1]));
+				session.setAttribute("isAdmin", true);
+			} else {
+				session.setAttribute("isAdmin", false);
 			}
 			
+			session.setAttribute("logged", true);
+			session.setAttribute("errore", null);
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/page/login.jsp");
 			dispatcher.forward(request, response);
 			
 		} else {
-			session.setAttribute("Errore", "e-mail o password errata");
+			session.setAttribute("errore", "e-mail o password errata");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/page/index.jsp");
+			dispatcher.forward(request, response);
 		}
 
 	}

@@ -13,6 +13,15 @@
 			</div>
 
 
+			<% 
+				String errore =(String) session.getAttribute("errore");
+				if (errore != null) {
+			%>
+			<script type="text/javascript">window.alert(errore);</script>			
+			<% 
+				}
+			%>
+			
 			<div class="log">
 				<ul>
 					<li><a href="#" class="login"><img src="/Progetto_web/img/log in.png"
