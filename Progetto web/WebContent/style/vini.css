@@ -7,16 +7,19 @@
 		box-shadow: 0 0 25px rgba(0, 0, 0, 0.5), inset 0 0 1px
 		rgba(255, 255, 255, 0.6);
 		margin: auto 10% 1em 10%;
+
 }
 .bacheca tr{
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3), inset 0 0 1px
 		rgba(255, 255, 255, 0.5);
 	
+	
+	
 }
 
 .bottiglia img{
 	float: left;
-	width: 2.5em;
+	width: 30%;
 	height: auto;
 	margin:1em 3em 1em 3em;
 	
@@ -29,6 +32,102 @@
 .descrizione p{
 	margin-top: 1em;
 	font-size: x-large;
-	width: 50%;
+	width: 60%;
 	margin: auto 7em;
+}
+/*110%*/
+@media ( max-width : 1250px) {
+	.bottiglia img{
+	width: 10%;
+	}
+	
+	.descrizione h2{
+	margin: auto 5em;
+	}
+	
+	.descrizione p{
+	font-size: large;
+	width: 50%;
+	}
+}
+/*125%*/
+@media ( max-width : 1140px) {
+	.bottiglia img{
+	width: 20%;
+	}
+	
+	.descrizione h2{
+	margin: auto 4em;
+	}
+	
+	.descrizione p{
+	font-size: medium;
+	width: 50%;
+	}
+}
+/*150%*/
+@media ( max-width : 1040px) {
+	.bottiglia img{
+	width: 20%;
+	}
+	
+	.descrizione h2{
+	margin: auto 3em;
+	}
+	
+	.descrizione p{
+	font-size: small;
+	width: 50%;
+	}
+}
+/*175%*/
+@media ( max-width : 900px) {
+	.bottiglia img{
+	width: 20%;
+	}
+	
+	.descrizione h2{
+	font-size: xx-large;
+	margin: auto 3em;
+	}
+	
+	.descrizione p{
+	font-size: x-small;
+	width: 50%;
+	}
+}
+
+/*200%*/
+@media ( max-width : 700px) {
+	.bottiglia img{
+	width: 20%;
+	margin:1em 2em 1em 2em;
+	}
+	
+	.descrizione h2{
+	font-size: x-large;
+	margin: auto 3em;
+	}
+	
+	.descrizione p{
+	font-size: x-small;
+	width: 60%;
+	}
+}
+/*300%*/
+@media ( max-width : 500px) {
+	.bottiglia img{
+	width: 20%;
+	margin:1em 1em 1em 1em;
+	}
+	
+	.descrizione h2{
+	font-size: large;
+	margin: auto 3em;
+	}
+	
+	.descrizione p{
+	font-size: xx-small;
+	width: 60%;
+	}
 }

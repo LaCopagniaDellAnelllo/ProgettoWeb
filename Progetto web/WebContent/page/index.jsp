@@ -11,7 +11,6 @@
 <script src="/Progetto_web/JavaScript/jquery.js"></script>
 <script src="/Progetto_web/JavaScript/SliderHome.js"></script>
 <script src="/Progetto_web/JavaScript/login.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 </head>
