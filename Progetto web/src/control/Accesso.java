@@ -67,14 +67,16 @@ public class Accesso extends HttpServlet{
 		
 		try {
 			Connection con = condb.createConnection();
+			String[] result = new String[4];
 			String query = 	"SELECT distinct account.idAccount, account.admin, account.username" +
 							"FROM account, cliente, dipendenti" +
 							"WHERE username =" + user +"  or email ="+ user +" and password = "+ pass+
 							"and account.cf_dipendente = dipendenti.CodiceFiscale and account.id_cliente= cliente.CodiceFiscale";
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(query);
-			String[] result = new String[4];
+			
 			while (rs.next()) {
+				System.out.println("id account="+ rs.getString("account.username"));
 				result[0] = rs.getString(1);
 				result[1] = rs.getString(2);
 				result[2] = rs.getString(3);
