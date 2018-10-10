@@ -14,13 +14,13 @@
 
 			<ul>
 				<li class="social"><a href="heVolevi.jsp"> <img
-						src="/Progetto_web/img/9-2-twitter-high-quality-png.png" width="50px"
+						src="/Progetto_web/img/9-2-twitter-high-quality-png.png" width="50px" alt="twetter"
 						height="50px"></a></li>
 				<li class="social"><a href="heVolevi.jsp"> <img
-						src="/Progetto_web/img/instagram-colourful-icon.png" width="50px"
+						src="/Progetto_web/img/instagram-colourful-icon.png" width="50px" alt="Instagram"
 						height="50px"></a></li>
 				<li class="social"><a href="heVolevi.jsp"> <img
-						src="/Progetto_web/img/md_5a9794da1b10e.png" width="50px" height="50px"></a></li>
+						src="/Progetto_web/img/md_5a9794da1b10e.png" width="50px" height="50px" alt="facebook"></a></li>
 			</ul>
 		</div>
 
