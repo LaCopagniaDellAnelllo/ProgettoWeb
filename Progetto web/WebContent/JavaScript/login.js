@@ -8,12 +8,4 @@ jQuery(document).ready(function ($) {
         return false;
     })
 	
-	$('.back').click(function(){
-		$('.login').show();
-		$('.signin').show();
-		$('.accesso').hide();
-		
-		
-	})
-	
 });

@@ -3,8 +3,10 @@
 
     	<!--  header -->
 	<div>
+		<!-- sfondo -->
 		<div class="topunder"></div>
 
+		
 		<div class="top">
 
 			<div class="logo">
@@ -32,7 +34,7 @@
 			</div>
 
 			<div class="accesso">
-				<form action="../Accesso" method="post">
+				<form action="/Progetto_web/Accesso" method="post">
 					<div class="riga">
 						<p>Username:</p>
 						<input type="text" name="Username">
