@@ -22,13 +22,18 @@
 			<script type="text/javascript">window.alert(errore);</script>			
 			<% 
 				}
+				if(request.getSession(false) != null) {
+					
+				} else {
+					
+				}
 			%>
 			
 			<div class="log">
 				<ul>
 					<li><a href="#" class="login"><img src="/Progetto_web/img/log in.png"
 							style="margin-bottom: 5px;"></a></li>
-					<li><a href="#" class="signin"><img
+					<li><a href="/Progetto_web/page/signin.jsp" class="signin"><img
 							src="/Progetto_web/img/sign in.png"></a></li>
 				</ul>
 			</div>
@@ -48,7 +53,9 @@
 						<input type="submit" value="Login">
 				</form>
 			</div>
-
+			<%
+				//}
+			%>
 
 
 			<div class="nomeazienda" align="center">

@@ -17,7 +17,7 @@
 <body>
 
 
-	<%@ include file="header.jsp" %>
+	<%@ include file="header.jsp"%>
 
 
 
@@ -61,8 +61,10 @@
 					src="/Progetto_web/img/immagini dello slder/poderibosco_19foto_di_a.manna.jpg"></li>
 				<li><img
 					src="/Progetto_web/img/immagini dello slder/poderibosco_20foto_di_a.manna.jpg"></li>
-				<li><img src="/Progetto_web/img/immagini dello slder/s4200039.jpg"></li>
-				<li><img src="/Progetto_web/img/immagini dello slder/vignasfondo_18.jpg"></li>
+				<li><img
+					src="/Progetto_web/img/immagini dello slder/s4200039.jpg"></li>
+				<li><img
+					src="/Progetto_web/img/immagini dello slder/vignasfondo_18.jpg"></li>
 			</ul>
 
 		</div>
@@ -80,8 +82,8 @@
 		<div class="clr-both"></div>
 
 	</div>
-	
-		<%@ include file="footer.jsp" %>
+
+	<%@ include file="footer.jsp"%>
 
 
 

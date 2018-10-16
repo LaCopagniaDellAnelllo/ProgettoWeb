@@ -17,11 +17,13 @@
 
 	<%@ include file="header.jsp" %>
 	
-
-	<p class="ok">
-		Accesso effettuato
-	</p>
-
+	<div class="ok" align="center">
+		<p>
+			Accesso effettuato
+		</p>
+		
+		<button>Return to home</button>
+		</div>
 	
 	<%@ include file="footer.jsp" %>
 
