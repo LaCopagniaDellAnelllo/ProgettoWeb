@@ -16,17 +16,26 @@
 
 
 			<% 
+				
 				String errore =(String) session.getAttribute("errore");
 				if (errore != null) {
 			%>
 			<script type="text/javascript">window.alert(errore);</script>			
 			<% 
-				}
-				if(request.getSession(false) != null) {
-					
-				} else {
-					
-				}
+				} else if(session.getAttribute("nome") != null) {
+			%>
+				<div class="logged">
+					<img src="" alt="immagine profilo" style="float: right;">
+					<p> 
+					</p>
+				</div>
+				
+				
+				
+			
+			<%
+				} else {				
+				//}
 			%>
 			
 			<div class="log">
@@ -54,7 +63,7 @@
 				</form>
 			</div>
 			<%
-				//}
+				}
 			%>
 
 

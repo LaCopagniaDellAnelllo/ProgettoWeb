@@ -31,22 +31,14 @@ public class Accesso extends HttpServlet{
 		String[] utente = checkAccesso(user, pass);
 		
 		if (utente != null) {
-			
-			//controlla se è un dipendente[3] (o cliente[2])
-			if (utente[3] != null) {
-				session.setAttribute("nome", utente[3]);
-			} else {
-				session.setAttribute("nome", utente[2]);
-			}
-			
-			
+						
 			//controlla se è admin
 			if (Boolean.parseBoolean(utente[1]) == true) {
 				session.setAttribute("isAdmin", true);
 			} else {
 				session.setAttribute("isAdmin", false);
 			}
-			
+			session.setAttribute("nome", utente[2]);
 			session.setAttribute("logged", true);
 			session.setAttribute("errore", null);
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/page/login.jsp");
@@ -67,7 +59,7 @@ public class Accesso extends HttpServlet{
 		
 		try {
 			Connection con = condb.createConnection();
-			String[] result = new String[4];
+			String[] result = new String[3];
 			String query = 	"SELECT distinct account.idAccount, account.admin, account.username" +
 							"FROM account, cliente, dipendenti" +
 							"WHERE username =" + user +"  or email ="+ user +" and password = "+ pass+
@@ -80,7 +72,6 @@ public class Accesso extends HttpServlet{
 				result[0] = rs.getString(1);
 				result[1] = rs.getString(2);
 				result[2] = rs.getString(3);
-				result[3] = rs.getString(4);
 			}
 			
 			con.close();

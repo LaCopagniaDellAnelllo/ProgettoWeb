@@ -45,12 +45,16 @@ div.logo {
 	margin-left: 0.5%;
 }
 
+.logged {
+	float: right;
+}
+
 div.log {
 	float: right;
 	padding: 0em 0.11em auto auto;
 }
 
-div.accesso{
+div.accesso {
 	float: right;
 	display: none;
 }
