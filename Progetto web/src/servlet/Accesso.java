@@ -7,11 +7,15 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import model.ConnectorDB;
+import util.DriverManagerConnectionPool;
+
 
 @WebServlet("/Accesso")
 public class Accesso extends HttpServlet{
 	private static final long serialVersionUID = 1L;
+	private static final String DB = "cantina";
+	private static final String USERNAME = "root";
+	private static final String PASSWORD = "root";
 
 	public Accesso() {
 		super();
@@ -28,7 +32,12 @@ public class Accesso extends HttpServlet{
 		
 		String user = (String) request.getParameter("Username");
 		String pass = (String) request.getParameter("Password");
-		String[] utente = checkAccesso(user, pass);
+		String[] utente;
+		try {
+			utente = checkAccesso(user, pass);
+		} catch (SQLException e) {
+			utente = null;
+		}
 		
 		if (utente != null) {
 						
@@ -54,11 +63,11 @@ public class Accesso extends HttpServlet{
 
 	
 	@SuppressWarnings("finally")
-	private String[] checkAccesso(String user, String pass) {
-		ConnectorDB condb = new ConnectorDB();
+	private String[] checkAccesso(String user, String pass)  throws SQLException{
+		
 		
 		try {
-			Connection con = condb.createConnection();
+			Connection con = DriverManagerConnectionPool.getConnection(DB, USERNAME, PASSWORD);
 			String[] result = new String[3];
 			String query = 	"SELECT distinct account.idAccount, account.admin, account.username" +
 							"FROM account, cliente, dipendenti" +
@@ -77,9 +86,8 @@ public class Accesso extends HttpServlet{
 			con.close();
 			return result;
 			
-		} catch (InstantiationException | IllegalAccessException | SQLException e) {
-			e.printStackTrace();
-		} finally {
+		} 
+		finally {
 			return null;
 		}
 	}

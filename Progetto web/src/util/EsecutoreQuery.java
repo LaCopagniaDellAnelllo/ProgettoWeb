@@ -1,24 +1,25 @@
-package model;
+package util;
 
 import java.sql.*;
 import java.util.ArrayList;
 
+
 public class EsecutoreQuery {
 
-	private ConnectorDB condb;
+	
 	ArrayList<String[]> result = null;
 	String[] tupla;
 	Connection con = null;
 	
 	public EsecutoreQuery() throws InstantiationException, IllegalAccessException, SQLException {
-		condb = new ConnectorDB();
+		
 	}
 	
 	
 	public ArrayList<String[]> exeQuery(String query, int numColonne) throws SQLException, InstantiationException, IllegalAccessException {
 		try {
 			ResultSet rs = null;
-			con = condb.createConnection();
+			con = DriverManagerConnectionPool.getConnection("", "", "");
 			if (con!=null){
 				Statement st = con.createStatement();
 
@@ -49,7 +50,7 @@ public class EsecutoreQuery {
 	
 	public void closeConnection() {
 		try {
-			condb.closeConnection();
+			DriverManagerConnectionPool.releaseConnection(con);;
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

@@ -1,16 +1,17 @@
-package model;
+package util;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 public class tester {
 	public static void main(String[] args) throws SQLException, InstantiationException, IllegalAccessException {
-		ConnectorDB connector = new ConnectorDB();
+		
 		String user = "alexert";
 		String pass = "alexert97";
-		Connection con = connector.createConnection();
+		Connection con = DriverManagerConnectionPool.getConnection("", user, pass);
 		
 		
 		try {
