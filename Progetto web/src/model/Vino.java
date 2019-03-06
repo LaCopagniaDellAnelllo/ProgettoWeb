@@ -1,6 +1,6 @@
 package model;
 
-public class VinoBean {
+public class Vino {
 
 	private String idVino;
 	private double centilitri;
@@ -10,10 +10,10 @@ public class VinoBean {
 	private String vinoSfusoNome;
 	private String vinoSfusoAnno;
 	
-	public VinoBean() {
+	public Vino() {
 	}
 
-	public VinoBean(String idVino, double centilitri, double prezzo, String immagine, String descrizione,
+	public Vino(String idVino, double centilitri, double prezzo, String immagine, String descrizione,
 			String vinoSfusoNome, String vinoSfusoAnno) {
 		this.idVino = idVino;
 		this.centilitri = centilitri;

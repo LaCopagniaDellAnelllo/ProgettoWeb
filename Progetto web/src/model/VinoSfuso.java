@@ -1,6 +1,6 @@
 package model;
 
-public class VinoSfusoBean {
+public class VinoSfuso {
 
 	private String nome;
 	private int anno;
@@ -9,11 +9,11 @@ public class VinoSfusoBean {
 	private String qualitaUva;
 	
 	
-	public VinoSfusoBean() {
+	public VinoSfuso() {
 		
 	}
 	
-	public VinoSfusoBean(String nome, int anno, String igp, int litri, String qualitaUva) {
+	public VinoSfuso(String nome, int anno, String igp, int litri, String qualitaUva) {
 		this.nome = nome;
 		this.anno = anno;
 		this.igp = igp;
