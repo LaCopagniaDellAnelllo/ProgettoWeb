@@ -1,6 +1,5 @@
 package servlet;
 
-
 import java.io.*;
 import java.sql.*;
 import javax.servlet.*;
@@ -23,7 +22,7 @@ public class Accesso extends HttpServlet{
 	
 	
 	protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		doPost(request,response);
+		System.out.println("Metodo non consentito, usare il metodo doPost");
 	}
 	
 	/*se non viene effettuato il login crea pagina bianca*/

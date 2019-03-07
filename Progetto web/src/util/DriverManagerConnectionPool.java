@@ -7,7 +7,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class DriverManagerConnectionPool {
+	public static final String DATABASE  = "cantina";
+	public static final String USERNAME  = "root";
+	public static final String PASSWORD  = "root";
 
+	
+	
     private static List<Connection> freeDbConnections;
 
     static {
