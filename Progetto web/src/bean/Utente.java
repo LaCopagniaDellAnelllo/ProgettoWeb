@@ -1,33 +1,35 @@
 package bean;
 
 public class Utente {
-	private String id;
+	private String idUtente;
 	private String nome;
 	private String cognome;
 	private String eMail;
 	private String password;
 	private String username;
+	private boolean admin;
 	
 	public Utente() {
 		
 	}
 
-	public Utente(String id, String nome, String cognome, String eMail, String password, String username) {
+	public Utente(String id, String nome, String cognome, String eMail, String password, String username, boolean admin) {
 		super();
-		this.id = id;
+		this.idUtente = id;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.eMail = eMail;
 		this.password = password;
 		this.username = username;
+		this.admin = admin;
 	}
 
-	public String getId() {
-		return id;
+	public String getIdUtente() {
+		return idUtente;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setIdUtente(String id) {
+		this.idUtente = id;
 	}
 
 	public String getNome() {
@@ -70,5 +72,12 @@ public class Utente {
 		this.username = username;
 	}
 	
+	public boolean isAdmin() {
+		return admin;
+	}
+	
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
 	
 }

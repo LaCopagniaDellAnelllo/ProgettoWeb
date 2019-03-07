@@ -13,12 +13,26 @@ public class Vino {
 	public Vino() {
 	}
 
+	
+	
 	public Vino(String idVino, double centilitri, double prezzo, String immagine, String descrizione,
 			String vinoSfusoNome, String vinoSfusoAnno) {
+		super();
 		this.idVino = idVino;
 		this.centilitri = centilitri;
 		this.prezzo = prezzo;
 		this.immagine = immagine;
+		this.descrizione = descrizione;
+		this.vinoSfusoNome = vinoSfusoNome;
+		this.vinoSfusoAnno = vinoSfusoAnno;
+	}
+
+
+
+	public Vino(String descrizione, double centilitri, double prezzo,  
+			String vinoSfusoNome, String vinoSfusoAnno) {
+		this.centilitri = centilitri;
+		this.prezzo = prezzo;
 		this.descrizione = descrizione;
 		this.vinoSfusoNome = vinoSfusoNome;
 		this.vinoSfusoAnno = vinoSfusoAnno;

@@ -1,43 +1,41 @@
 package model;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import bean.Vino;
+import bean.Utente;
 import util.DriverManagerConnectionPool;
 
-public class VinoManager {
+public class UtenteManager {
+
+	private static final String TABLE = "utente";
 	
-	private static final String TABLE = "vino";
-	
-	private static final String FINDBYID = "SELECT * FROM " + TABLE + " WHERE id = ?";
+	private static final String FINDBYID = "SELECT * FROM " + TABLE + " WHERE id_utente = ?";
 	private static final String FINDALL = "SELECT * FROM " + TABLE;
-	private static final String INSERT = "INSERT INTO " + TABLE + "(id_vino, descrizione, immagine, centilitri, prezzo, vino_sfuso_nome, vino_sfuso_anno)" +
+	private static final String INSERT = "INSERT INTO " + TABLE + "(id_utente, nome, cognome, username, password, e_mail, admin)" +
 						"VALUES (? ,?, ?, ?, ?, ?, ?)";
-	private static final String DELETE = "DELETE FROM " + TABLE + " WHERE id_vino = ?";	
+	private static final String DELETE = "DELETE FROM " + TABLE + " WHERE id_utente = ?";	
 	
-	public VinoManager() {
-		
-	}
-	
-	
-	public Vino findById(String id) throws SQLException {
+	public Utente findById(String id) throws SQLException {
 		Connection con = DriverManagerConnectionPool.getConnection(DriverManagerConnectionPool.DATABASE, DriverManagerConnectionPool.USERNAME, DriverManagerConnectionPool.PASSWORD);
 		PreparedStatement ps = null;
-		Vino bean = new Vino();
+		Utente bean = new Utente();
 		try {
 			ps = con.prepareStatement(FINDBYID);
 			ps.setString(1, id);
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
-				bean.setIdVino(rs.getString("id_vino"));
-				bean.setCentilitri(rs.getDouble("centilitri"));
-				bean.setDescrizione(rs.getString("descrizione"));
-				bean.setPrezzo(rs.getDouble("prezzo"));
-				bean.setVinoSfusoAnno("vino_sfuso_anno");
-				bean.setVinoSfusoNome("vino_sfuso_nome");
-				bean.setImmagine("immagine");
+				bean.setIdUtente(rs.getString("id_utente"));
+				bean.setCognome(rs.getString("cognome"));
+				bean.setNome(rs.getString("nome"));
+				bean.setUsername(rs.getString("username"));
+				bean.setMail(rs.getString("e_mail"));
+				bean.setPassword(rs.getString("password"));
+				bean.setAdmin(rs.getBoolean("admin"));
 			}
 		} finally {
 			try {
@@ -49,24 +47,25 @@ public class VinoManager {
 		}
 		return bean;
 	}
-	
-	public List<Vino> findAll() throws SQLException {
+
+	public List<Utente> findAll() throws SQLException {
 		Connection con = DriverManagerConnectionPool.getConnection(DriverManagerConnectionPool.DATABASE, DriverManagerConnectionPool.USERNAME, DriverManagerConnectionPool.PASSWORD);
 		PreparedStatement ps = null;
-		List<Vino> lista = new ArrayList<>();
+		List<Utente> lista = new ArrayList<>();
 		
 		try {
 			ps = con.prepareStatement(FINDALL);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				Vino bean = new Vino();
-				bean.setIdVino(rs.getString("id_vino"));
-				bean.setCentilitri(rs.getDouble("centilitri"));
-				bean.setDescrizione(rs.getString("descrizione"));
-				bean.setPrezzo(rs.getDouble("prezzo"));
-				bean.setVinoSfusoAnno(rs.getString("vino_sfuso_anno"));
-				bean.setVinoSfusoNome(rs.getString("vino_sfuso_nome"));			
-				bean.setImmagine(rs.getString("immagine"));
+				Utente bean = new Utente();
+				bean.setIdUtente(rs.getString("id_utente"));
+				bean.setCognome(rs.getString("cognome"));
+				bean.setNome(rs.getString("nome"));
+				bean.setUsername(rs.getString("username"));
+				bean.setMail(rs.getString("e_mail"));
+				bean.setPassword(rs.getString("password"));
+				bean.setAdmin(rs.getBoolean("admin"));
+
 				lista.add(bean);
 			}
 			
@@ -81,18 +80,19 @@ public class VinoManager {
 		return lista;
 	}
 
-	public void insert(Vino bean) throws SQLException {
+	public void insert(Utente bean) throws SQLException {
 		Connection con = DriverManagerConnectionPool.getConnection(DriverManagerConnectionPool.DATABASE, DriverManagerConnectionPool.USERNAME, DriverManagerConnectionPool.PASSWORD);
 		PreparedStatement ps = null;
 		try {
 			ps = con.prepareStatement(INSERT);
-			ps.setString(1, bean.getIdVino());
-			ps.setString(2, bean.getDescrizione());
-			ps.setString(3, bean.getImmagine());
-			ps.setDouble(4, bean.getCentilitri());
-			ps.setDouble(5, bean.getPrezzo());
-			ps.setString(6, bean.getVinoSfusoNome());
-			ps.setString(7, bean.getVinoSfusoAnno());
+			ps.setString(1, bean.getIdUtente());
+			ps.setString(2, bean.getNome());
+			ps.setString(3, bean.getCognome());
+			ps.setString(4, bean.getUsername());
+			ps.setString(5, bean.getPassword());
+			ps.setString(6, bean.getMail());
+			ps.setBoolean(7, bean.isAdmin());
+			
 			ps.executeUpdate();	
 		} finally {
 			try {
@@ -121,5 +121,5 @@ public class VinoManager {
 			 }
 		}
 	}
+	
 }
-
