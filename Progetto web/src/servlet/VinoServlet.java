@@ -15,6 +15,7 @@ import model.VinoManager;
 
 @WebServlet("/VinoServlet")
 public class VinoServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,6 +37,8 @@ public class VinoServlet extends HttpServlet {
 				req.setAttribute("canc", true);
 				
 			}
+			
+			req.setAttribute("errore", false);
 		} catch (Exception e) {
 			req.setAttribute("errore", true);
 		}

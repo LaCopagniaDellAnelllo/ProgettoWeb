@@ -14,6 +14,7 @@ public class UtenteManager {
 
 	private static final String TABLE = "utente";
 	
+	private static final String FINDLOGIN = "SELECT * FROM " + TABLE + " WHERE password  = ?";
 	private static final String FINDBYID = "SELECT * FROM " + TABLE + " WHERE id_utente = ?";
 	private static final String FINDALL = "SELECT * FROM " + TABLE;
 	private static final String INSERT = "INSERT INTO " + TABLE + "(id_utente, nome, cognome, username, password, e_mail, admin)" +
@@ -120,6 +121,45 @@ public class UtenteManager {
 				DriverManagerConnectionPool.releaseConnection(con);
 			 }
 		}
+	}
+	
+	public Utente login(String user, String pass) throws SQLException {
+		Connection con = DriverManagerConnectionPool.getConnection(DriverManagerConnectionPool.DATABASE, DriverManagerConnectionPool.USERNAME, DriverManagerConnectionPool.PASSWORD);
+		PreparedStatement ps = null;
+		Utente bean = null;
+		
+		try {
+			/* controlla se si effettua l'accessso con e-mail */
+			if(user.matches("[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}")) {
+				ps = con.prepareStatement(FINDBYID + " AND e_mail = ?");
+			} else {
+				/* o con username */
+				ps = con.prepareStatement(FINDBYID + " AND username = ?");
+			}
+			ps.setString(1, pass);
+			ps.setString(2, user);
+			
+			ResultSet rs = ps.executeQuery();
+			if (rs.next()) {
+				bean = new Utente();
+				bean.setIdUtente(rs.getString("id_utente"));
+				bean.setCognome(rs.getString("cognome"));
+				bean.setNome(rs.getString("nome"));
+				bean.setUsername(rs.getString("username"));
+				bean.setMail(rs.getString("e_mail"));
+				bean.setPassword(rs.getString("password"));
+				bean.setAdmin(rs.getBoolean("admin"));
+			}
+		} finally {
+			try {
+				if(ps != null)
+					ps.close();
+			 } finally {
+				DriverManagerConnectionPool.releaseConnection(con);
+			 }	
+		}
+		
+		return bean;
 	}
 	
 }
