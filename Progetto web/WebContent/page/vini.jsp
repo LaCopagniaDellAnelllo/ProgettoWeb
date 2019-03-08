@@ -1,4 +1,5 @@
-<%@ page language="java" import="util.EsecutoreQuery, java.sql.*, java.util.*"
+<%@page import="bean.Vino"%>
+<%@ page language="java" import=", java.sql.*, java.util.*"
 	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
@@ -18,26 +19,24 @@
 
 
 <%
-String query = "select immagine, Descrizione, VinoSfuso_Nome from vino";
-EsecutoreQuery eq = new EsecutoreQuery();
-ArrayList<String[]> result = eq.exeQuery(query, 3);
-if (result != null) {
+	List<Vino> result = (List<Vino>) request.getAttribute("listaVini");
+	if (result != null) {
 %>
 
 	<div>
 		<table class="bacheca">
 			<%
 				for (int i = 0; i < result.size(); i++) {
-						String[] vino = result.get(i);
+						Vino vino = result.get(i);
 			%>
 			<tr>
 				<td class="bottiglia">
-					<img src="<%=vino[0]%>">
+					<img src="<%=vino.getImmagine()%>">
 				</td>
 				
 				<td class="descrizione">
-					<h2><%=vino[2]%></h2>
-					<p><%=vino[1]%></p>
+					<h2><%=vino.getDescrizione()%></h2>
+					<p><%=vino.getDescrizione()%></p>
 				</td>
 				
 			</tr>
