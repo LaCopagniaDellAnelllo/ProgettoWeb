@@ -15,7 +15,7 @@ import util.DriverManagerConnectionPool;
 public class Login extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
-	Login() {
+	public Login() {
 		super();
 	}
 	
@@ -38,10 +38,10 @@ public class Login extends HttpServlet{
 			if (bean != null) {
 				session.setAttribute("utente", bean);
 			}
-			request.setAttribute("erroreLog", false);
+			request.setAttribute("erroreLog", null);
 
 		} catch (SQLException e) {
-			request.setAttribute("erroreLog", true);
+			request.setAttribute("erroreLog", "Username o password errata");
 			e.printStackTrace();
 		}
 

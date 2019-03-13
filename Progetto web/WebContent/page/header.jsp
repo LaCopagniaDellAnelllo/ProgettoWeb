@@ -1,3 +1,4 @@
+<%@page import="bean.Utente"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -16,17 +17,17 @@
 
 
 			<% 
-				
-				String errore =(String) session.getAttribute("errore");
+				Utente bean = (Utente) session.getAttribute("utente");
+				String errore =(String) request.getAttribute("erroreLog");
 				if (errore != null) {
 			%>
 			<script type="text/javascript">window.alert(errore);</script>			
 			<% 
-				} else if(session.getAttribute("nome") != null) {
+				} else if(bean != null) {
 			%>
 				<div class="logged">
 					<img src="" alt="immagine profilo" style="float: right;">
-					<p> 
+					<p> <%=bean.getNome()%> 
 					</p>
 				</div>
 				
@@ -35,7 +36,7 @@
 			
 			<%
 				} else {				
-				//}
+				
 			%>
 			
 			<div class="log">
@@ -48,7 +49,7 @@
 			</div>
 
 			<div class="accesso">
-				<form action="/Progetto_web/Accesso" method="post">
+				<form action="/Progetto_web/Login" method="post">
 					<div class="riga">
 						<p>Username:</p>
 						<input type="text" name="Username">

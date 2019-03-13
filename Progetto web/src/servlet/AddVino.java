@@ -16,6 +16,10 @@ import model.VinoManager;
 @WebServlet("/AddVino")
 public class AddVino extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	public AddVino() {
+		super();
+	}
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

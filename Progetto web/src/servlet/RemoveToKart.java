@@ -17,8 +17,11 @@ import model.VinoManager;
 
 @WebServlet("/removeToKart")
 public class RemoveToKart extends HttpServlet {
-
 	private static final long serialVersionUID = 1L;
+	
+	public RemoveToKart() {
+		super();
+	}
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
