@@ -59,7 +59,7 @@
 						<input type="password" name="Password">
 					</div>
 					
-						<input type="button" value="Signin">
+						<a href="/Progetto_web/page/signin.jsp"><input type="button" value="Signin"></a>
 						<input type="submit" value="Login">
 				</form>
 			</div>
